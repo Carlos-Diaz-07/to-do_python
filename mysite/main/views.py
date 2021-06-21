@@ -33,8 +33,6 @@ def index(response, id):
 def home(response):
     return render(response, "main/home.html", {})
 
-# finish at part 5 simple forms 1:21:13
-
 def create(response):
     if response.method == "POST":
         form = CreateNewList(response.POST)
