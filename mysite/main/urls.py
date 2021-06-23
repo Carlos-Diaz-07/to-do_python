@@ -11,4 +11,3 @@ path("home", views.home, name="home"),
 ]
 
 
-# Next part 9 2:21:10

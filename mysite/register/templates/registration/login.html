@@ -1,7 +1,7 @@
 {% extends "main/base.html" %}
 
 {% block title %}
-Create an Account
+Log In
 {% endblock %}
 
 {% load crispy_forms_tags %}
@@ -9,8 +9,8 @@ Create an Account
 {% block content %}
 <form method="POST" class="form-group">
     {% csrf_token %}
-    {{ form|crispy }}
-    <button type="submit" class="btn btn-success">Register</button>
+    {{form|crispy}}
+    <p>Don't have an account? Create one <a href="/register">here</a> </p>
+    <button type="submit" class="btn btn-success">LogIn</button>
 </form>
 {% endblock %}
-
